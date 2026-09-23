@@ -1,3 +1,7 @@
-import { defineFunction } from '@aws-amplify/backend';
+import { defineFunction } from "@aws-amplify/backend";
 
-export const worker = defineFunction({ name: 'tasks-worker', entry: './handler.ts', timeoutSeconds: 30 });
+export const worker = defineFunction({
+  name: "tasks-worker",
+  entry: "./handler.ts",
+  timeoutSeconds: 30,
+});
